@@ -1,0 +1,43 @@
+.name {
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 10px;
+}
+
+#dialog{
+    height: 50vh;
+    width: 50vh;
+}
+
+#text{
+    line-height: 150%;
+    display : block;
+    text-align: center;
+}
+
+#no-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#yes-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divided Sections with Lines</title>
+    <link rel="stylesheet" href="/static/Styles/manager_home.css">
+</head>
+<body>
+    <div class="container">
+        <div id="unprepared-orders" style="background-color: blanchedalmond;">
+            <label style="font-size: 30px;">Orders To Be Prepared</label>
+        </div>
+        <div id="prepared-orders" style="background-color: cadetblue;">
+            <label style="font-size: 30px;">Orders To Be Picked Up</label>
+        </div>
+        <div id="pickedup-orders" style="background-color: brown;">
+            <label style="font-size: 30px;">Picked Up Orders</label>
+        </div>
+        <!-- Dividers for splitting the sections -->
+        <div class="divider first"></div>
+        <div class="divider second"></div>
+    </div>
+
+    <dialog id="dialog">
+        <label>Is the order preparation done?</label>
+        <button id="dyes">Yes</button>
+        <button id="dno">No</button>
+    </dialog>
+
+    <dialog id="dialog2">
+        <label>Has the order been picked up?</label>
+        <button id="dyes1">Yes</button>
+        <button id="dno2">No</button>
+    </dialog>
+
+    <script src="/static/manager_home.js"></script>
+</body>
+</html>

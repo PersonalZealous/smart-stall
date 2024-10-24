@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Stall // Login</title>
+    <link rel="stylesheet" href="/static/Styles/manager_details.css">
+</head>
+<body>
+    <label class="name"> Smart Stall</label>
+    <div class = 'main-container'>
+        <label for="username" id="input-text1">Username:</label>
+        
+        <input type="text" id="manager-username" name="username">
+      
+        <label for="phone-no" id="input-text2">Phone Number:</label>
+     
+        <input type="text" id="manager-phone-no" name="phone-no">
+   
+        <button id="manager-next-btn" onclick="manager_details()">Next</button>
+
+        <dialog id="stall_dialog">
+            <label id="text">Do you want to create a stall?</label>
+            
+            <button id="dialog-manager-yes-btn" onclick="window.location.href='/new_stall_details'">Yes</button>
+           
+            <button id="dialog-manager-no-btn" onclick="dialogNoBtn()">No</button>
+        </dialog>
+
+        <dialog id="stall_details_dialog">
+            <label for="stall_name">Stall Name(Case Sensitive): </label>
+            <input id="stall-name" type="text" placeholder="Stall Name" name="stall_name">
+
+            <label for="stall_code">Stall Code:</label>
+            <input id="stall-code" type="text" placeholder="Stall Code" name="stall_code">
+
+            <button id="stall_details_btn">Next</button>
+        </dialog>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>

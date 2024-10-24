@@ -1,0 +1,252 @@
+#main-container{
+    display: none;
+    height: 100vh;
+}
+
+body{
+    background-image: url('./image3.jpg');
+}
+
+#stalls-dialog{
+    height: 50vh;
+    width: 50vh;
+    background-image: url('./image2.jpg');
+}
+
+#stall-container{
+    display: flex;
+    top: 20px;
+    height: 90vh;
+    gap: 20px 1px;
+  
+}
+
+.stall-rbtn{
+    width: 100%;
+   
+    border: 1px solid rgba(0, 0, 0, 0.561);
+    border-radius: 21px;
+    border-width: 3px;
+}
+
+.stall-rtext{
+    font-size: 30px;
+    
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+.text{
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.radio-stall{
+    width: 100px;
+}
+
+#log-out{
+    right: 10px;
+    top: 5px;
+    display: none;
+}
+#menu-heading{
+    text-align: center;
+    font-size: 100px;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: #a86a0e;
+    
+}
+.item-container1{
+    height: 15vh;
+    max-width: 40vh;
+}
+
+.item-container1-chosen{
+    border: 2px solid  black;
+    background: rgba(203, 145, 101, 0.237);
+    border-radius: 21px;
+    border-width: 2px;
+    max-width:  40vh;
+}
+
+
+
+.item-name-class{
+    font-size: 60px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(218 231 82);
+}
+
+.item-price-class{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    left: 30px;
+    color: rgb(172 143 143 / 62%)
+}
+
+.item-quantity-class{
+    border-radius: 2em;
+    height: 2em;
+    width: 10em;
+    background-color: #e1bdbd;
+}
+
+::placeholder{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 17px;
+    font-weight: 350;
+}
+
+
+
+
+#menu-container{
+    position: absolute;
+    top: 7em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 34vh;
+    width: 100vh;
+}
+
+
+.menu-heading-container{
+    border-radius: 3em;      
+}
+
+@media(max-width:1470px) and ( min-width: 1000px){
+    #menu-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media(max-width:1000px) and ( min-width: 700px){
+    #menu-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:700px) and (min-width: 0px){
+    #menu-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.menu-next-class{
+    position: absolute;
+    background-color: rgb(212, 212, 107);
+    width: 10em;
+    height: 2.7em;
+    border-radius: 2em;
+    bottom: 5%;
+    right: 1%;
+}
+
+
+
+
+
+#cart-dialog{
+    min-width: 65vh;
+    min-height: 22vh;
+    background-image: url('./image2.jpg');
+    background-color: rgba(0, 0, 0, 0.161);
+    
+}
+
+
+
+.cart-items-container-class{
+    align-items: center;
+    left: 0;
+    width: 100%;
+    justify-content: center !important;
+
+}
+
+
+
+.next-btn-container{
+    height: 5.5vh;
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+.cart-text{
+   
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 70px;
+
+}
+
+
+.cart-btn{
+    bottom: 0;
+}
+
+.cart-items-container-class{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    width: 100%;
+}
+
+.cart-item-name-class{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.cart-item-price-class{
+    font-size: 30px;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+.cart-total-name-class{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: goldenrod;
+}
+
+.cart-total-price-class{
+    font-size: 44px;
+    font-style: italic;
+    text-transform: capitalize;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: goldenrod;
+}
+
+.cart-btn{
+    border-radius: 2.5em;
+    height: 2em;
+    width: 5em;
+    background-color: black;
+    color: white;
+}

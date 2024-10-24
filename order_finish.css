@@ -1,0 +1,192 @@
+body{
+    background-image: url('./image2.jpg');
+}
+
+
+#dialog{
+    height: 70vh;
+    width: 67vh; 
+    display: flex;
+    flex-direction: column; 
+    background-image: url('./image3.jpg');
+    
+}
+
+#pay-text{
+    font-size: 5em;
+    top: 0;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    align-self: center;
+    color: #2074c8;
+
+}
+
+#payment-image{
+    height: 30vh;
+}
+
+#s-container{
+    display: none;
+    
+}
+
+#line{
+    position: absolute;
+    width: 2px;
+    background-color: white;
+    left: 50%;
+    height: 30%;
+    border-radius: 10px;
+    width: 8px;
+}
+
+#payment-options-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#online-section{
+    display: flex;
+    width: 50%;
+    flex-flow: column;
+    
+}
+
+#offline-section{
+    display: flex;    
+    width: 50%;
+    flex-flow: column;
+    
+    
+}
+
+.upi-text{
+    color: rgb(211, 202, 202);
+    font-size: 2.5em;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cash-text{
+    color: rgb(211, 202, 202);
+    font-size: 2.5em;
+    position: absolute;
+    right: 2%;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cash-text1{
+    color: rgb(211, 202, 202);
+    font-size: 2.5em;
+    position: absolute;
+    right: 2%;
+    top: 70vh;
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    top: 54vh;
+}
+
+#upi-btn{
+    left: 2%;
+    width: 45%;
+    position: absolute;
+    top: 94%;
+    height: 2.5em;
+    border-radius: 10em;
+    background-color: #ff7518;
+}
+
+#cash-btn{
+    right: 2%;
+    width: 45%;
+    position: absolute;
+    top: 94%;
+    height: 2.5em;
+    border-radius: 10em;
+    background-color:#90b73a
+}
+
+@media screen and (max-width: 800px) {
+    .upi-text{
+        font-size: 2em;
+    }
+    .cash-text{
+        font-size: 2em;
+    }    
+    .cash-text1{
+        
+        font-size: 2em;
+    }
+}
+
+
+
+#s-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#order-container{
+    position: relative;
+    top: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#log-out{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#tick-image{
+    height: 15em;
+}
+
+.user-details-class{
+    font-size: 2em;
+    color: silver;
+    padding: 0.7em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.order-status-class{
+    font-size: 3em;
+    color: rgba(252, 254, 155, 0.719);
+    font-family: "Kanit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    align-self: center;
+}
+
+@media  only screen and (max-width: 600px) {
+    #tick-image{
+        height: 8em;
+    }
+
+    .user-details-class{
+        align-self: left;
+        font-size: 1.4em;
+    }
+
+    .order-status-class{
+        font-size: 1.7em;
+    }
+    
+}

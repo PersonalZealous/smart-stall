@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#unprepared-orders, #prepared-orders, #pickedup-orders {
+    width: 33.33%;
+    height: 100%;
+    left: 10%;
+}
+
+.divider {
+    position: absolute;
+    width: 1px;
+    background-color: black;
+    height: 100vh;
+}
+
+.divider.first {
+    left: 33.33%;
+}
+
+.divider.second {
+    left: 66.66%;
+}
+
+.order-container-class{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2em;
+    margin: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 1em;
+    padding: 1em;
+}
+

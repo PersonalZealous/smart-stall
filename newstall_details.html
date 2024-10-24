@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Stall // New Stall</title>
+    <link rel="stylesheet" href="/static/Styles/newstall_details.css">
+</head>
+<body>
+    <label class="name"> Smart Stall</label>
+    <div class = 'main-container'>
+        <label for="stall-name" id="input-text1">Stall Name:</label>
+        <input type="text" id="stall-name" name="stall-name">
+        <label for="stall-code" id="input-text2">Stall Code:</label>
+        <input type="text" id="stall-code" name="stall-code">
+        <label for="upi-id" id="input-text3">UPI ID:</label>
+        <input type="text" id="upi-id" name="upi-id">
+        <button id="next-btn" onclick="new_stall_details()">Next</button>
+        <dialog id="dialog2">
+            <label id="text">Please pay 100INR to proceed to next step</label>
+            <button onclick="window.location.href='/add_menu'">Next</button>
+        </dialog>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>

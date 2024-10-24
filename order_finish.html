@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Stall</title>
+    <link rel="stylesheet" href="/static//Styles/order_finish.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <dialog id="dialog">
+        <p id="pay-text">Pay</p>
+
+        <img src="../static/Styles/payment.svg" id="payment-image">
+
+        <div id="payment-options-container">
+            <div id="online-section">
+                <label class="upi-text">Proceed</label>
+                <label class="upi-text">with UPI payment</label>
+                <br>
+                <br>
+                <br>
+                <button id="upi-btn">Pay</button>
+            </div>
+            <div id="line"></div>
+            <div id="offline-section">
+                <label class="cash-text">Proceed</label>
+                <br>
+                <label class="cash-text1">with Cash</label>
+                <button id="cash-btn">Pay</button>
+            </div>
+        </div>
+    </dialog>
+    <div id="s-container">
+    
+        <div id="order-container">
+            <img src="../static/Styles/check-mark-correct-svgrepo-com.svg" id="tick-image">
+            <br>
+            <br>
+            
+        </div>
+        <button id="log-out">Log Out</button>
+    </div>
+    <script src="/static/order_finish.js"></script>
+</body>
+</html>

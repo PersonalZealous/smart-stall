@@ -1,0 +1,25 @@
+.name {
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 10px;
+}
+
+#dialog {
+    height: 50vh;
+    width: 50vh;
+}

@@ -1,0 +1,95 @@
+.name {
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+}
+
+.text{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    width: 50vh;
+    font-size: 30px;
+    color: #ADEFD1;
+}
+
+.box{
+    border-radius: 15px;
+    height: 4vh;
+    background-color: #DAD4B5;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    justify-content: right;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    background-image: url('./image6.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    row-gap: 30px;
+    right: 8%;
+    position: relative;
+}
+
+#dialog{
+    height: 200px;
+    width: 200px;
+}
+
+#customer-next-btn{
+    background-color: #E84545;
+    border-radius: 12px;
+    height: 1cm;
+}
+
+@media only screen and (max-width: 800px) {
+    #login {
+        display: none; /* Hide the regular login for small screens */
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(5, auto); /* Adjusted to have the first row auto */
+        row-gap: 30px;
+        left: 0;
+        position: relative;
+    }
+
+    #login2 {
+        grid-row: 1; 
+        display: block; 
+        position: relative;
+        color: rgb(229, 203, 203);
+        font-size: 50px;
+        left: 0; 
+        font-family: "Playwrite GB S", cursive;
+        font-weight: 800;
+        font-style: italic;
+        text-align: center;
+        margin: 10px 0; 
+    }
+}
+
+
+#login{
+    position: absolute;
+    color: rgb(229, 203, 203);
+    font-size: 11em;
+    left: 14%;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+}
+
